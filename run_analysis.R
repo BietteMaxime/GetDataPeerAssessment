@@ -97,6 +97,7 @@ filteredDataSet <- mergedDataSet[grep('(mean\\(\\)|std\\(\\))|^(activity|subject
 #(Done in step 1)
 
 # 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+library(reshape2)
 tidyDataSet<-dcast(melt(filteredDataSet,id=c("subject","activity")),subject+activity~variable,mean)
 #tidyDataSet <- aggregate(filteredDataSet[-67:-68],by=list(subject=filteredDataSet$subject,activity=filteredDataSet$activity), mean)
 
