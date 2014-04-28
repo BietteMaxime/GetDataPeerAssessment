@@ -14,6 +14,18 @@ See CodeBook.md for full explaination.
 
 The data set can be found at the following URL: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
+Usage
+=====
+
+```R
+  source('run_analysis.R')
+```
+
+If not present it will download the dataset from UCI in the 'data' subfolder and unzip it.
+
+The script will create a file called 'tidy.txt'.
+
+
 References:
 ===========
 [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
